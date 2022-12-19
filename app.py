@@ -42,10 +42,12 @@ const relevant = function(query, link){
 """
 
 search_template = styles + """
+     <div>
      <form action="/" method="post">
       <input type="text" name="query">
       <input type="submit" value="Search">
-    </form> 
+    </form>
+     </div> 
     """
 
 result_template = """
