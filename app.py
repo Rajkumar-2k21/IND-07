@@ -4,6 +4,8 @@ from filter import Filter
 from storage import DBStorage
 import html
 
+
+
 app = Flask(__name__)
 
 styles = """
@@ -22,6 +24,7 @@ styles = """
     .rel-button {
         cursor: pointer;
         color: blue;
+    
     }
 </style>
 <script>
@@ -43,7 +46,8 @@ const relevant = function(query, link){
 
 search_template = styles + """
      <div>
-     <form action="/" method="post">
+      
+     <form action="/" method="post"  style="padding-left:450px;">
       <input type="text" name="query">
       <input type="submit" value="Search">
     </form>
